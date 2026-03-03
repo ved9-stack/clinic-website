@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sunrise Care Clinic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header { background: #2c7be5; color: white; text-align: center; padding: 20px; }
+        nav { background: #1a5bb8; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 15px; }
+        section { padding: 40px; text-align: center; }
+        .services { display: flex; flex-wrap: wrap; justify-content: center; }
+        .card { background: #f4f4f4; margin: 15px; padding: 20px; width: 250px; border-radius: 8px; }
+        button { background: #2c7be5; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        footer { background: #222; color: white; text-align: center; padding: 15px; }
+        @media (max-width: 600px) {
+            .services { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sunrise Care Clinic</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Doctor</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>General Consultation</h3>
+            <p>Professional medical advice and treatment.</p>
+        </div>
+        <div class="card">
+            <h3>Dental Care</h3>
+            <p>Complete dental checkups and treatments.</p>
+        </div>
+        <div class="card">
+            <h3>Diagnostics</h3>
+            <p>Accurate lab tests and reports.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Book Appointment</h2>
+    <button onclick="bookAppointment()">Book Now</button>
+</section>
+
+<footer>
+    <p>📍 Kompalle, Hyderabad | 📞 9876543210</p>
+</footer>
+
+<script>
+function bookAppointment() {
+    alert("Appointment Request Sent!");
+}
+</script>
+
+</body>
+</html>
